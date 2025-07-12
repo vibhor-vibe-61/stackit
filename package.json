@@ -1,0 +1,34 @@
+{
+  "name": "stackit-qa-platform",
+  "version": "1.0.0",
+  "description": "A minimal question-and-answer platform for collaborative learning",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "install-server": "npm install",
+    "install-all": "npm run install-server && npm run install-client"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "react-scripts": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.0"
+  },
+  "keywords": ["qa", "forum", "stackit", "questions", "answers"],
+  "author": "StackIt Team",
+  "license": "MIT"
+} 
